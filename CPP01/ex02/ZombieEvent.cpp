@@ -14,10 +14,12 @@ Zombie* ZombieEvent::newZombie(std::string name)
 
 Zombie* ZombieEvent::randomChump()
 {
-	std::string pullName[8] = {"Bob", "James", "Mark", "Jim", "Pony", "Potato", "Brain", "Buka"};
+	int	randNumber;
+	std::string pullName[9] = {"Bob", "James", "Mark", "Jim", "Pony", "Potato", "Brain", "Buka", "Pupa"};
 	Zombie *zomb;
 	std::srand(std::time(NULL));
+	randNumber = std::rand() % 8;
+	zomb = newZombie(pullName[randNumber]);
 	std::srand(std::time(NULL));
-	zomb = newZombie(pullName[std::rand() % 7]);
 	return zomb;
 }
