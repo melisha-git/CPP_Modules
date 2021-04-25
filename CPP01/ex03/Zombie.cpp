@@ -1,24 +1,16 @@
 # include "Zombie.hpp"
 
-Zombie::Zombie()
-{
-	this->name = "Zomb";
-	this->type = "zombie";
+Zombie::Zombie() : _name("Zomb"), _type("zombie") {
 }
 
-Zombie::Zombie(std::string name, std::string type)
-{
-	this->name = name;
-	this->type = type;
-	std::cout << this->type << " " << this->name << " is born" << std::endl;
+Zombie::Zombie(std::string name, std::string type) : _name(name), _type(type) {
+	std::cout << this->_type << " " << this->_name << " is born" << std::endl;
 }
 
-void Zombie::annouce()
-{
-	std::cout << "<" << this->name << " (" << this->type << ")> Braiiiiiiinnnssss..." << std::endl;
+void Zombie::annouce() {
+	std::cout << "<" << this->_name << " (" << this->_type << ")> Braiiiiiiinnnssss..." << std::endl;
 }
 
-Zombie::~Zombie()
-{
-	std::cout << this->type << " " << this->name << " is died\n";
+Zombie::~Zombie() {
+	std::cout << this->_type << " " << this->_name << " is died\n";
 }

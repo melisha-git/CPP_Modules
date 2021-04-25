@@ -1,7 +1,6 @@
 # include "ZombieEvent.hpp"
 
-int main()
-{
+int main() {
 	ZombieEvent zombEvent;
 	Zombie *zomb;
 	Zombie *zymb;

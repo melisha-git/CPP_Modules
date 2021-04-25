@@ -1,32 +1,29 @@
 #include "ZombieHorde.hpp"
 
-ZombieHorde::ZombieHorde(long N)
-{
-	if (N < 0 || N > 2147483647)
-	{
-		std::cout << "Error (n < 0 or  n > 2147483647)\n";
-		return ;
-	}
+std::string ZombieHorde::pullName[] = {"Bob", "James", "Viy", "Tomato", "Qwertyty", "Ferb", "Fines", "Toyota", "Lada"};
+
+ZombieHorde::ZombieHorde(int n) : _n(n) {
 	int		randomNumber = 0;
 	int i = 0;
-	std::string pullName[9] = {"Bob", "James", "Viy", "Tomato", "Qwertyty", "Ferb", "Fines", "Toyota", "Lada"};
-	Zombie **arrZombie = new Zombie*[N];
-	while (i < N)
-	{
+	_arrZombie = (Zombie *)operator new(sizeof(Zombie) * n);
+
+	while (i < n) {
 		std::srand((std::time(NULL)) * i);
-		randomNumber = std::rand() % 8;
-		arrZombie[i] = new Zombie(pullName[randomNumber], "zombie");
-		ZombieHorde::announce(*(arrZombie[i]));
+		randomNumber = std::rand() % ((sizeof(pullName) / sizeof(pullName[0])));
+		new (_arrZombie + i) Zombie(pullName[randomNumber], "zombie");
 		i++;
 	}
-	for (int i = 0; i < N; i++)
-	{
-		delete arrZombie[i];
-	}
-	delete [] arrZombie;
 }
 
-void ZombieHorde::announce(Zombie& zomb)
-{
-	zomb.annouce();
+ZombieHorde::~ZombieHorde() {
+	for (int i = 0; i < _n; i++) {
+		_arrZombie[i].~Zombie();
+	}
+	operator delete((void *)_arrZombie);
+}
+
+void ZombieHorde::announce() {
+	for (int i = 0; i < _n; i++) {
+		_arrZombie[i].annouce();
+	}
 }

@@ -1,7 +1,6 @@
 #include "Pony.hpp"
 
-void ponyOnTheHeap()
-{
+void ponyOnTheHeap() {
 	const int count = 3;
 	Pony *pony = new Pony[count];
 	pony[0].setName("Burka");
@@ -12,20 +11,16 @@ void ponyOnTheHeap()
 		std::cout << "Pony " << pony[i].getName() << " have " << pony[i].getBreed() << " breed\n";
 	}
 	delete [] pony;
-	return ;
 }
 
-void ponyOnTheStack()
-{
+void ponyOnTheStack() {
 	Pony pony("Blura", "black", "icelandic");
 	std::cout << "Pony " << pony.getName() << " is rides\n";
 	std::cout << "Pony " << pony.getName() << " have " << pony.getColor() << " color\n";
 	std::cout << "Pony " << pony.getName() << " have " << pony.getBreed() << " breed\n";
-	return ;
 }
 
-int main()
-{
+int main() {
 	ponyOnTheHeap();
 	ponyOnTheStack();
 	return 0;

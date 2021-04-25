@@ -1,58 +1,25 @@
 #include "Pony.hpp"
 
-Pony::Pony(std::string name, std::string color, std::string breed)
-{
-	this->name = name;
-	this->color = color;
-	this->breed = breed;
+Pony::Pony(std::string name, std::string color, std::string breed) : _name(name), _color(color), _breed(breed) {
 	std::cout << "Pony " << name << " is born\n";
 }
 
-Pony::Pony(std::string name, std::string color)
-{
-	this->name = name;
-	this->color = color;
-	this->breed = "british";
-	std::cout << "Pony " << name << " is born\n";
+Pony::~Pony() {
+	std::cout << "Pony " << this->_name << " is died\n";
 }
 
-Pony::Pony(std::string name)
-{
-	this->name = name;
-	this->color = "blue";
-	this->breed = "british";
-	std::cout << "Pony " << name << " is born\n";
+std::string Pony::getName() const {
+	return this->_name;
 }
 
-Pony::Pony()
-{
-	this->name = "default";
-	this->color = "blue";
-	this->breed = "british";
-	std::cout << "Pony " << name << " is born\n";
+const std::string Pony::getColor() const {
+	return this->_color;
 }
 
-Pony::~Pony()
-{
-	std::cout << "Pony " << this->name << " is died\n";
+const std::string Pony::getBreed() const {
+	return this->_breed;
 }
 
-std::string Pony::getName()
-{
-	return this->name;
-}
-
-std::string Pony::getColor()
-{
-	return this->color;
-}
-
-std::string Pony::getBreed()
-{
-	return this->breed;
-}
-
-void Pony::setName(std::string name)
-{
-	this->name = name;
+void Pony::setName(std::string name) {
+	this->_name = name;
 }

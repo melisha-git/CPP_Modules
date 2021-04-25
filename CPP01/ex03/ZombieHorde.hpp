@@ -5,8 +5,13 @@
 class ZombieHorde
 {
 public:
-	ZombieHorde(long N);
-	void announce(Zombie& zomb);
+	ZombieHorde(int n);
+	void announce();
+	~ZombieHorde();
+private:
+	int		_n;
+	Zombie *_arrZombie;
+	static std::string pullName[];
 };
 
 #endif

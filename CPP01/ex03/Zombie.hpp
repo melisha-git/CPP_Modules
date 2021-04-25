@@ -11,8 +11,8 @@ public:
 	~Zombie();
 	void annouce();
 private:
-	std::string name;
-	std::string type;
+	std::string _name;
+	std::string _type;
 };
 
 #endif
