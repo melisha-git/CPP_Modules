@@ -13,7 +13,7 @@ ZombieHorde::ZombieHorde(long N)
 	Zombie **arrZombie = new Zombie*[N];
 	while (i < N)
 	{
-		std::srand((i));
+		std::srand((std::time(NULL)) * i);
 		randomNumber = std::rand() % 8;
 		arrZombie[i] = new Zombie(pullName[randomNumber], "zombie");
 		ZombieHorde::announce(*(arrZombie[i]));
