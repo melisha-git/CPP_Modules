@@ -1,7 +1,6 @@
 # include "Brain.hpp"
 
-std::string Brain::identify()
-{
+const std::string Brain::identify() const{
 	std::stringstream addr;
 
 	addr << this;

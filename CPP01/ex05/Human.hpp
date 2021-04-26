@@ -2,13 +2,12 @@
 # define HUMAN_HPP
 # include "Brain.hpp"
 
-class Human
-{
+class Human {
 public:
-	std::string identify();
-	Brain& getBrain();
+	const std::string identify() const;
+	const Brain& getBrain() const;
 private:
-	Brain brain;
+	const Brain _brain;
 };
 
 #endif

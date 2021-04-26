@@ -4,15 +4,13 @@
 #include <string>
 
 
-class Weapon
-{
+class Weapon {
 public:
-	Weapon(std::string type);
-	Weapon();
-	const	std::string& getType();
+	Weapon(std::string type = "crube spiked club");
+	const	std::string& getType() const;
 	void	setType(std::string type);
 private:
-	std::string type;
+	std::string& _type;
 };
 
 #endif

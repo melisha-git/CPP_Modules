@@ -4,10 +4,9 @@
 # include <string>
 # include <sstream>
 
-class Brain
-{
+class Brain {
 public:
-	std::string	identify();
+	const std::string	identify() const;
 };
 
 #endif

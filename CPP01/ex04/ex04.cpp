@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-int main()
-{
+int main() {
 	std::string brains = "HI THIS IS BRAIN";
 	std::string* brainsPtr;
 	std::string& brainsRef = brains;

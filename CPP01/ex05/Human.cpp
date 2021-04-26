@@ -1,11 +1,9 @@
 # include "Human.hpp"
 
-std::string Human::identify()
-{
-	return brain.identify();
+const std::string Human::identify() const {
+	return _brain.identify();
 }
 
-Brain& Human::getBrain()
-{
-	return brain;
+const Brain& Human::getBrain() const {
+	return _brain;
 }

@@ -2,8 +2,7 @@
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
-int main()
-{
+int main() {
 	Weapon weapon = Weapon("crube spiked club");
 
 	HumanA bob("Bob", weapon);
