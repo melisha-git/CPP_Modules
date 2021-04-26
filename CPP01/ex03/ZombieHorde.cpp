@@ -8,7 +8,7 @@ ZombieHorde::ZombieHorde(int n) : _n(n) {
 	_arrZombie = (Zombie *)operator new(sizeof(Zombie) * n);
 
 	while (i < n) {
-		std::srand((std::time(NULL)) * i);
+		std::srand((std::time(NULL)) * i + 1);
 		randomNumber = std::rand() % ((sizeof(pullName) / sizeof(pullName[0])));
 		new (_arrZombie + i) Zombie(pullName[randomNumber], "zombie");
 		i++;
