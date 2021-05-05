@@ -23,8 +23,6 @@ Fixed::~Fixed() {
 	std::cout << "Destructor called\n";
 }
 
-
-
 int Fixed::getRawBits() const {
 	return (this->_raw);
 }
@@ -40,8 +38,6 @@ int Fixed::toInt() const {
 float   Fixed::toFloat() const {
 	return ((float)this->_raw / (float)(1 << Fixed::s_countBits));
 }
-
-
 
 Fixed & Fixed::operator=(Fixed const& fix) {
 	std::cout << "Assignation operator called\n";
