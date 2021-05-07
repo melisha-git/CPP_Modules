@@ -6,3 +6,5 @@
 <p>CPP01 - Изучение Memory allocation, References, Pointers to members, File streams.</p>
 <br>
 <p>CPP02 - Изучение Ad-hoc polymorphism, operators overload and canonical classes.</p>
+<br>
+<p>CPP02 - Изучение inheritance.</p>
