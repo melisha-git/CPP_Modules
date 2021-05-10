@@ -11,6 +11,7 @@ AWeapon & AWeapon::operator=(AWeapon const &copy) {
 	this->_name = copy._name;
 	this->_damage = copy._damage;
 	this->_apcost = copy._apcost;
+	return *this;
 }
 
 AWeapon::AWeapon() : _name("deagle"), _apcost(21), _damage(34) {

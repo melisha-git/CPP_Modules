@@ -3,7 +3,7 @@
 #include "Peon.hpp"
 #include "Hater.hpp"
 
-int main()
+void myTest()
 {
 	Sorcerer robert("Robert", "the Magnificent");
 	Victim jim("Jimmy");
@@ -13,5 +13,16 @@ int main()
 	robert.polymorph(jim);
 	robert.polymorph(joe);
 	robert.polymorph(jak);
+}
+
+int main()
+{
+	Sorcerer robert("Robert", "the Magnificent");
+	Victim jim("Jimmy");
+	Peon joe("Joe");
+	std::cout << robert << jim << joe;
+	robert.polymorph(jim);
+	robert.polymorph(joe);
+//	myTest();
 	return 0;
 }

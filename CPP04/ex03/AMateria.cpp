@@ -1,6 +1,6 @@
 #include "AMateria.hpp"
 
-AMateria::AMateria(const std::string &type) : _xp(0), _type(type) {
+AMateria::AMateria(const std::string &type) : _type(type), _xp(0) {
 }
 
 const std::string & AMateria::getType() const {
@@ -12,6 +12,7 @@ unsigned int AMateria::getXP() const {
 }
 
 void AMateria::use(ICharacter& target) {
+	(void)target;
 	this->_xp += 10;
 }
 

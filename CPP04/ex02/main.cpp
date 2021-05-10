@@ -19,7 +19,6 @@ int myTest()
 	copyFin = finnes;
 	ptrFin->getUnit(0)->battleCry();
 	std::cout << "COUNT - " << copyFin->getCount() << std::endl;
-	delete copyFin;
 	delete finnes;
 	return 0;
 }
