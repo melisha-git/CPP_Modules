@@ -7,4 +7,8 @@
 <br>
 <p>CPP02 - Изучение Ad-hoc polymorphism, operators overload and canonical classes.</p>
 <br>
-<p>CPP02 - Изучение inheritance.</p>
+<p>CPP03 - Изучение inheritance.</p>
+<br>
+<p>CPP04 - Изучение Subtype polymorphism, abstract classes, interfaces.</p>
+<br>
+<p>CPP05 - Изучение Repetition and Exceptions.</p>
