@@ -14,3 +14,5 @@
 <p>CPP05 - Изучение Repetition and Exceptions.</p>
 <br>
 <p>CPP06 - Изучение c++ casts.</p>
+<br>
+<p>CPP07 - Изучение templates.</p>
