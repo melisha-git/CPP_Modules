@@ -1,8 +1,8 @@
-NAME = whatever
+NAME = iter
 
 SRC = main.cpp
 
-HEAD = whatever.hpp
+HEAD = iter.hpp
 
 all: $(NAME)
 
