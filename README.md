@@ -12,3 +12,5 @@
 <p>CPP04 - Изучение Subtype polymorphism, abstract classes, interfaces.</p>
 <br>
 <p>CPP05 - Изучение Repetition and Exceptions.</p>
+<br>
+<p>CPP06 - Изучение c++ casts.</p>
