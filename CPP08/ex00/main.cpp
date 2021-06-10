@@ -1,6 +1,5 @@
 #include "easyfind.hpp"
 #include <list>
-#include <vector>
 #include <algorithm>
 
 int main() {
