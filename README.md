@@ -16,3 +16,7 @@
 <p>CPP06 - Изучение c++ casts.</p>
 <br>
 <p>CPP07 - Изучение templates.</p>
+<br>
+<p>CPP08 - Изучение Templated containers, iterators, algorithms.</p>
+
+<p>Данный проект - моя личная собственность и я запрещаю копировать код участникам Ecole 42 и School 21</p>
